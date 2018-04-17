@@ -1,0 +1,122 @@
+﻿{
+  "country": [
+    {
+      "name": "Forms",
+      "dishes": [
+        {
+          "dishname": "Add Form",
+          "image":"dumplings",
+          "description": "Dumplings are either pan fried using a simple recipe including all-purpose flour, water, and salt made into a thick dough before frying on a pan until golden brown, or boiled in a soup. The fried version is usually served with breakfast codfish as a side."
+        },
+        {
+          "dishname": "Add Queue",
+          "image":"chowmein",
+          "description":"Cantonese style chow mein contains deep-fried crunchy golden egg noodles, green peppers, pea pods, bok choy, bamboo shoots, water chestnuts, shrimp, Chinese roast pork (char siu), chicken, and beef, and is served in a thick sauce."
+        },
+        {
+          "dishname": "Personal Forms",
+          "image":"springrolls",
+          "description":"Spring roll is a fried dish usually available as a dim sum. They typically contain minced pork, shredded carrot, bean sprouts and other vegetables served with a sauce similar to Worcestershire sauce."
+
+        },
+        {
+          "dishname": "Private Group Forms",
+          "image":"manchurian",
+          "description":"Gobi Manchurian is an Indian Chinese fried cauliflower food item popular in India. Gobi (Cauliflower) Manchurian is the result of the adaptation of Chinese cooking and seasoning techniques to suit Indian tastes. ... Its taste can vary from mild spicy to hot and fiery based on the recipe and personal preference."
+
+        },
+        {
+          "dishname": "My Subscribed Public Forms",
+          "image":"manchowsoup",
+          "description":"Soup. Place of origin. ... Manchow soup is a soup popular in Indian Chinese cuisine due to its ease of preparation and hot spicy taste. It is available in large restaurants and street food carts alike. Although the soup is named after Manchuria it does not resemble any that is normally found in the cuisines of the region."
+
+        },
+         {
+          "dishname": "All Public Forms",
+          "image":"manchowsoup",
+          "description":"Soup. Place of origin. ... Manchow soup is a soup popular in Indian Chinese cuisine due to its ease of preparation and hot spicy taste. It is available in large restaurants and street food carts alike. Although the soup is named after Manchuria it does not resemble any that is normally found in the cuisines of the region."
+
+        }
+
+      ]
+    },
+    {
+      "name": "Groups",
+      "image":"india",
+      "dishes": [
+        {
+          "dishname": "Create Group",
+          "image":"dalmakhani",
+          "description":"Dal makhani or dal makhni (pronounced daal ma-khaa-nee, 'buttery lentils') is a popular dish from the Punjab region of India and Pakistan. The primary ingredients are whole black lentil (urad), red kidney beans (rajma), butter and cream."
+
+        },
+        {
+          "dishname": "Group List",
+          "image":"biriyani",
+          "description":"Learn About This Indian Food. ... A world-renowned Indian dish, biryani takes time and practice to make but is worth every bit of the effort. Long-grained rice (like basmati) flavored with exotic spices such as saffron is layered with lamb, chicken, fish, or vegetables cooked in a thick gravy."
+
+        }
+      ]
+    },
+    {
+      "name": "Contacts",
+      "image":"japan",
+      "dishes": [ 
+      ]
+
+    },    {
+      "name": "Applications",
+      "image":"italian",
+      "dishes": [
+ 
+      ]
+    },
+
+     {
+      "name": "UserName",
+      "dishes": [
+        {
+          "dishname": "Profile",
+          "image":"dumplings",
+          "description": "Dumplings are either pan fried using a simple recipe including all-purpose flour, water, and salt made into a thick dough before frying on a pan until golden brown, or boiled in a soup. The fried version is usually served with breakfast codfish as a side."
+        },
+        {
+          "dishname": "Forms",
+          "image":"chowmein",
+          "description":"Cantonese style chow mein contains deep-fried crunchy golden egg noodles, green peppers, pea pods, bok choy, bamboo shoots, water chestnuts, shrimp, Chinese roast pork (char siu), chicken, and beef, and is served in a thick sauce."
+        },
+        {
+          "dishname": "Menu Config",
+          "image":"springrolls",
+          "description":"Spring roll is a fried dish usually available as a dim sum. They typically contain minced pork, shredded carrot, bean sprouts and other vegetables served with a sauce similar to Worcestershire sauce."
+
+        },
+        {
+          "dishname": "Plan",
+          "image":"manchurian",
+          "description":"Gobi Manchurian is an Indian Chinese fried cauliflower food item popular in India. Gobi (Cauliflower) Manchurian is the result of the adaptation of Chinese cooking and seasoning techniques to suit Indian tastes. ... Its taste can vary from mild spicy to hot and fiery based on the recipe and personal preference."
+
+        },
+        {
+          "dishname": "Order History",
+          "image":"manchowsoup",
+          "description":"Soup. Place of origin. ... Manchow soup is a soup popular in Indian Chinese cuisine due to its ease of preparation and hot spicy taste. It is available in large restaurants and street food carts alike. Although the soup is named after Manchuria it does not resemble any that is normally found in the cuisines of the region."
+
+        },
+         {
+          "dishname": "Global Settings",
+          "image":"manchowsoup",
+          "description":"Soup. Place of origin. ... Manchow soup is a soup popular in Indian Chinese cuisine due to its ease of preparation and hot spicy taste. It is available in large restaurants and street food carts alike. Although the soup is named after Manchuria it does not resemble any that is normally found in the cuisines of the region."
+
+        },
+         {
+          "dishname": "Logout",
+          "image":"manchowsoup",
+          "description":"Soup. Place of origin. ... Manchow soup is a soup popular in Indian Chinese cuisine due to its ease of preparation and hot spicy taste. It is available in large restaurants and street food carts alike. Although the soup is named after Manchuria it does not resemble any that is normally found in the cuisines of the region."
+
+        }
+      ]
+    }
+
+  ]
+}

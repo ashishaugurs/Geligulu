@@ -1,16 +1,23 @@
 package fragment;
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -28,12 +35,12 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Profile extends Fragment {
+
      CountryCodePicker ccp;
      View rootView;
      TextView font_fullname,font_uname,font_email,contact_font,font_pwd,cnf_pwd,myProfile;
      Button resend,submit,deactivate;
      EditText full_name,user_name,email_user,phone_user,password,confirm_pwd;
-
 
     @Nullable
     @Override
@@ -77,6 +84,14 @@ public class Profile extends Fragment {
             @Override
             public void onClick(View v) {
                 setDeactivate();
+            }
+        });
+
+
+        myProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                profileDialog();
             }
         });
     }
@@ -133,7 +148,6 @@ public class Profile extends Fragment {
     }
 
 
-
     private void getidS() {
 
         myProfile=rootView.findViewById(R.id.myProfile);
@@ -144,8 +158,7 @@ public class Profile extends Fragment {
         font_pwd=rootView.findViewById(R.id.font_pwd);
         cnf_pwd=rootView.findViewById(R.id.cnf_pwd);
 
-        ccp=rootView.findViewById(com.geligulu.R.id.ccp);
-        ccp.registerCarrierNumberEditText(phone_user);
+
 
         full_name=rootView.findViewById(R.id.full_name);
         user_name=rootView.findViewById(R.id.user_name);
@@ -157,7 +170,8 @@ public class Profile extends Fragment {
         resend=rootView.findViewById(R.id.resend);
         submit=rootView.findViewById(R.id.submit);
         deactivate=rootView.findViewById(R.id.deactivate);
-
+        ccp=rootView.findViewById(com.geligulu.R.id.ccp);
+        ccp.registerCarrierNumberEditText(phone_user);
 
 
 
@@ -236,5 +250,54 @@ public class Profile extends Fragment {
         else {
             return true;
         }
+    }
+
+    //custom dialog
+
+
+    public void profileDialog() {
+        final CheckBox checkCon;
+        final ImageView closePop;
+        final TextView one,two;
+
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.setCancelable(false);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        Window window = dialog.getWindow();
+        WindowManager.LayoutParams wlp = window.getAttributes();
+        wlp.gravity = Gravity.TOP;
+        wlp.flags &= ~WindowManager.LayoutParams.FLAG_DIM_BEHIND;
+       // wlp.y = 200;
+        window.setAttributes(wlp);
+        dialog.setContentView(R.layout.custom_diloag);
+
+
+        one = (TextView) dialog.findViewById(R.id.text);
+        two= (TextView) dialog.findViewById(R.id.help);
+
+        closePop = (ImageView) dialog.findViewById(R.id.close_popup);
+        checkCon= (CheckBox) dialog.findViewById(R.id.check_profile);
+
+        one.setTypeface(CommonUtils.setFontFTRABK(getActivity()));
+        two.setTypeface(CommonUtils.setFontTextHeader(getActivity()));
+        checkCon.setTypeface(CommonUtils.setFontTextHeader(getActivity()));
+
+        closePop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.cancel();
+
+            }
+        });
+
+        checkCon.setOnClickListener(new View.OnClickListener() {
+                                  @Override
+                                  public void onClick(View view) {
+
+                                  }
+                              }
+        );
+
+        dialog.show();
     }
 }

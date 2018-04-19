@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/profile_parent"
+    android:background="@mipmap/back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="8sp"
+        android:layout_margin="5sp"
+        android:background="@drawable/shape_nornal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/myProfile"
+                android:layout_weight=".39"
+                android:drawablePadding="5sp"
+                android:drawableRight="@mipmap/info"
+                android:layout_margin="8sp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="My Profile"
+                android:textColor="@color/black"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:padding="2sp"
+                android:singleLine="true"
+                android:background="@mipmap/ic_launcher"
+                android:layout_weight=".10"
+                android:layout_width="0dp"
+                android:layout_height="35sp" />
+            <ImageView
+                android:padding="2sp"
+                android:singleLine="true"
+                android:background="@mipmap/home_pink"
+                android:layout_weight=".10"
+                android:layout_width="0dp"
+                android:layout_height="35sp" />
+            <ImageView
+                android:layout_marginLeft="5sp"
+                android:padding="2sp"
+                android:singleLine="true"
+                android:background="@mipmap/chat_hdpi"
+                android:layout_weight=".10"
+                android:layout_width="0dp"
+                android:layout_height="35sp" />
+
+
+            <ImageView
+                android:layout_marginLeft="5sp"
+                android:padding="2sp"
+                android:singleLine="true"
+                android:background="@mipmap/config_self"
+                android:layout_weight=".10"
+                android:layout_width="0dp"
+                android:layout_height="35sp" />
+
+
+            <ImageView
+                android:layout_marginLeft="5sp"
+                android:padding="2sp"
+                android:singleLine="true"
+                android:background="@mipmap/menu_self"
+                android:layout_weight=".10"
+                android:layout_width="0dp"
+                android:layout_height="35sp" />
+
+            <ImageView
+                android:layout_marginLeft="5sp"
+                android:padding="2sp"
+                android:singleLine="true"
+                android:background="@mipmap/setting_self"
+                android:layout_weight=".10"
+                android:layout_width="0dp"
+                android:layout_height="35sp" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="invisible"
+            android:drawablePadding="5sp"
+            android:drawableRight="@mipmap/info"
+            android:layout_margin="8sp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="My Profile"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_margin="5sp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/font_fullname"
+         android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            android:text="Full Name"
+         android:layout_weight=".40"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content" />
+
+            <EditText
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:imeOptions="actionNext"
+                android:id="@+id/full_name"
+                android:padding="5sp"
+                android:singleLine="true"
+                android:background="@drawable/shape"
+                android:layout_weight=".60"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5sp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/font_uname"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+
+                    android:text="User Name"
+                    android:layout_weight=".40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+
+                    android:imeOptions="actionNext"
+                    android:id="@+id/user_name"
+                    android:padding="5sp"
+                    android:singleLine="true"
+                    android:background="@drawable/shape"
+                    android:layout_weight=".60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_margin="5sp"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/font_email"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Email"
+                        android:layout_weight=".40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+
+                        android:id="@+id/email_user"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:padding="5sp"
+                        android:singleLine="true"
+                        android:background="@drawable/shape"
+                        android:layout_weight=".60"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="5sp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Email"
+                android:layout_weight=".40"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:id="@+id/resend"
+                android:text="Resend Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:background="@drawable/button_shape"
+                android:layout_weight=".35"
+                android:layout_width="0dp"
+                android:padding="5sp"
+                android:layout_height="30sp" />
+
+        </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_margin="5sp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/contact_font"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+
+                            android:text="Contact Number"
+                            android:layout_weight=".40"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+
+                        <LinearLayout
+                            android:background="@drawable/shape"
+                          android:layout_weight=".60"
+                            android:orientation="horizontal"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content">
+
+                            <com.hbb20.CountryCodePicker
+                                android:layout_gravity="center_vertical"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/ccp"
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:padding="5sp"
+                                android:layout_gravity="center_vertical"
+                                android:editable="false"
+                                android:textCursorDrawable="@null"
+                                android:id="@+id/phone_number"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Phone Number"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                 android:background="@null"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColorHint="@color/black"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_margin="5sp"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/font_pwd"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Password"
+                                android:layout_weight=".40"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                                android:imeOptions="actionNext"
+                                android:id="@+id/password"
+                                android:inputType="textPassword"
+                                android:padding="5sp"
+                                android:singleLine="true"
+                                android:background="@drawable/shape"
+                                android:layout_weight=".60"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_margin="5sp"
+                                android:weightSum="1"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:id="@+id/cnf_pwd"
+                                    android:textStyle="bold"
+                                    android:text="Confirm Password"
+                                    android:layout_weight=".40"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:id="@+id/confirm_pwd"
+                                    android:imeOptions="actionDone"
+                                    android:padding="5sp"
+                                    android:singleLine="true"
+                                    android:background="@drawable/shape"
+                                    android:layout_weight=".60"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="15sp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:id="@+id/submit"
+                android:text="Submit"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:background="@drawable/button_shape"
+                android:layout_weight=".30"
+                android:layout_width="0dp"
+                android:padding="5sp"
+                android:layout_height="30sp" />
+
+            <Button
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:id="@+id/deactivate"
+                android:layout_marginLeft="10sp"
+                android:text="Deactivate Account"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:background="@drawable/button_shape"
+                android:layout_weight=".55"
+                android:layout_width="0dp"
+                android:padding="5sp"
+                android:layout_height="30sp" />
+
+        </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>

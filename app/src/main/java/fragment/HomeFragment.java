@@ -38,17 +38,10 @@ public class HomeFragment extends Fragment {
 //        str_imagename = "chinese";
         tv_dishname = (TextView) view.findViewById(R.id.tv_dishname);
         user_dummy = (TextView) view.findViewById(R.id.user_dummy);
-
-
         tv_description = (TextView) view.findViewById(R.id.tv_description);
-
-
         tv_dishname.setText(str_disname);
         tv_description.setText(str_des);
-
-        user_dummy.setText(CommonUtils.getPreferencesString(getActivity(), AppConstant.NAME));
-
+        user_dummy.setText(CommonUtils.getPreferencesString(getActivity(), AppConstant.FULL_NAME));
     }
-
 
 }
